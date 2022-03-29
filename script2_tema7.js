@@ -1,7 +1,9 @@
 const operator = prompt("Type the operation you want to perform:");
-if ((operator != "+") || (operator != "-") || (operator != "*") || (operator != "/")){
-    alert("This is not a valid operation!");
-  }  
+var opList = ["+", "-", "*", "/"];
+
+if (!opList.includes(operator)) {
+  alert("This is not a valid operation!");
+}
 let firstNumber = prompt("What is the first number?");
 if (isNaN(firstNumber)) {
     alert("This is not a number!");
